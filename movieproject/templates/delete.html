@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="post">
+  {% csrf_token %}
+  Do you want to delete the movie?
+  <br>
+  <button type="button"class="btn btn-primary">Delete</button>
+
+</form>
+
+{% endblock %}
